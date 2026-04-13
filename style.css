@@ -13,7 +13,7 @@
 .nav {
     display: flex;
     padding: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 240, 222);
     position: sticky;
@@ -48,7 +48,7 @@
     border-radius: 5px;
     border: 0;
     margin: 0px 5px;
-    border: 1px solid rgb(4, 16, 32);
+    border: 1px solid gray;
 
 }
 
@@ -65,7 +65,7 @@
     border-radius: 5px;
     border: 0;
     margin: 0px 5px;
-    border: 1px solid rgb(4, 16, 32);
+    border: 1px solid gray;
 }
 
 .nav-register-btn:hover {
@@ -84,31 +84,23 @@
     justify-content: center;
 }
 
+img {
+    width: 400px;
+    height: auto;
+}
+
 .main-text1 {
+    margin-top: 25px;
     color: rgb(4, 16, 32);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-}
-
-.main-text2 {
-    color: rgb(4, 16, 32);
-
-    font-size: 50px;
-    font-weight: bold;
-}
-
-input {
-    width: 300px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 5px;
 }
 
 .main-btn {
+    margin-top: 25px;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     border: 0;
     background-color: rgb(4, 16, 32);
@@ -120,21 +112,6 @@ input {
     cursor: pointer;
 }
 
-.footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px 30px;
-    background-color: rgb(4, 16, 32);
-    color: white;
-    margin-top: 10px;
-    gap: 30px;
-}
-
-.footer-text {
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 5px 2px 5px rgb(212, 212, 212);
-}
 
 @media screen and (max-width: 768px) {
     .nav {
@@ -162,18 +139,6 @@ input {
         justify-content: center;
     }
 
-}
-
-@media screen and (max-width: 660px) {
-    .footer-text {
-        font-size: 30px;
-        font-weight: bold;
-        text-shadow: 5px 2px 5px rgb(212, 212, 212);
-    }
-
-    .footer-com {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 420px) {
@@ -207,7 +172,7 @@ input {
     }
 
     img {
-        width: 90vw;
+        width: 80vw;
     }
 
     input {
@@ -220,16 +185,6 @@ input {
         padding: 3vw 3vw;
         font-size: 14px;
 
-    }
-
-    .footer-text {
-        font-size: 4vw;
-        font-weight: bold;
-        text-shadow: 5px 2px 5px rgb(212, 212, 212);
-    }
-
-    .footer-com {
-        font-size: 2.5vw;
     }
 
 }
